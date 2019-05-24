@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0326cda0-af25-46b6-aafd-09075d863d26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ArticalSpider/spiders/jobbole.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArticalSpider/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/ArticalSpider/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArticalSpider/spiders/jobbole.py" beforeDir="false" afterPath="$PROJECT_DIR$/ArticalSpider/spiders/jobbole.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,9 +14,9 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ArticalSpider$jobbole.coverage" NAME="jobbole Coverage Results" MODIFIED="1553951311289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ArticalSpider/spiders" />
     <SUITE FILE_PATH="coverage/ArticalSpider$commend.coverage" NAME="commend Coverage Results" MODIFIED="1558274935660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ArticalSpider/utils" />
-    <SUITE FILE_PATH="coverage/ArticalSpider$es_model.coverage" NAME="es_model Coverage Results" MODIFIED="1558711644916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ArticalSpider/models" />
+    <SUITE FILE_PATH="coverage/ArticalSpider$es_model.coverage" NAME="es_model Coverage Results" MODIFIED="1558716455455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ArticalSpider/models" />
     <SUITE FILE_PATH="coverage/ArticalSpider$test.coverage" NAME="test Coverage Results" MODIFIED="1558276598913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ArticalSpider" />
-    <SUITE FILE_PATH="coverage/ArticalSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1558712172081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ArticalSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1558716459140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ArticalSpider$items.coverage" NAME="items Coverage Results" MODIFIED="1558451730229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ArticalSpider" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -44,38 +45,41 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="31" />
+          <entry key="py" value="33" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="31" />
+          <entry key="Python" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="22" />
           <entry key="dummy" value="9" />
-          <entry key="py" value="4591" />
+          <entry key="py" value="4867" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="4613" />
+          <entry key="Python" value="4889" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ArticalSpider/spiders/jobbole.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="173">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,19 +96,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ArticalSpider/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="129">
+              <caret line="111" column="54" lean-forward="true" selection-start-line="111" selection-start-column="54" selection-end-line="111" selection-end-column="54" />
               <folding>
                 <element signature="n#!!doc" />
+                <element signature="e#152#167#0" expanded="true" />
+                <element signature="e#418#499#0" />
+                <element signature="e#418#462#0" />
+                <element signature="e#543#1118#0" />
                 <element signature="e#639#1098#0" />
                 <element signature="e#660#958#0" />
-                <element signature="e#1164#2372#0" />
-                <element signature="e#1539#2372#0" />
-                <marker date="1558452758435" expanded="false" signature="538:543" ph="..." />
-                <marker date="1558452758435" expanded="false" signature="1159:1164" ph="..." />
+                <element signature="e#1230#1369#0" />
+                <element signature="e#1423#1606#0" />
+                <element signature="e#1651#1717#0" />
+                <element signature="e#1199#1237#0" />
+                <marker date="1558716404699" expanded="false" signature="666:671" ph="..." />
+                <marker date="1558716404699" expanded="true" signature="1760:1763" ph="..." />
               </folding>
             </state>
           </provider>
@@ -122,7 +132,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ArticalSpider/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="155">
               <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               <folding>
                 <element signature="e#193#246#0" expanded="true" />
@@ -189,6 +199,7 @@
       <find>RandomUserAgentMiddlware</find>
       <find>ArticleType._doc_type.using</find>
       <find>create_connection</find>
+      <find>JobboleItemLoader</find>
     </findStrings>
     <replaceStrings>
       <replace>self.</replace>
@@ -209,9 +220,9 @@
         <option value="$PROJECT_DIR$/ArticalSpider/pipelines.py" />
         <option value="$PROJECT_DIR$/ArticalSpider/middlewares.py" />
         <option value="$PROJECT_DIR$/ArticalSpider/models/es_model.py" />
-        <option value="$PROJECT_DIR$/ArticalSpider/items.py" />
-        <option value="$PROJECT_DIR$/ArticalSpider/spiders/jobbole.py" />
         <option value="$PROJECT_DIR$/ArticalSpider/settings.py" />
+        <option value="$PROJECT_DIR$/ArticalSpider/spiders/jobbole.py" />
+        <option value="$PROJECT_DIR$/ArticalSpider/items.py" />
       </list>
     </option>
   </component>
@@ -416,8 +427,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33333334" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40469208" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3421439" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40528634" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -425,7 +436,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32991204" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32892805" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.38269794" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -450,8 +461,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ArticalSpider/spiders/jobbole.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="23" />
+          <line>44</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -591,33 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ArticalSpider/utils/commend.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <marker date="1558277075123" expanded="true" signature="59:64" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ArticalSpider/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="e#193#246#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ArticalSpider/models/es_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -629,26 +613,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ArticalSpider/items.py">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="50">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArticalSpider/utils/commend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
-            <element signature="n#!!doc" />
-            <element signature="e#639#1098#0" />
-            <element signature="e#660#958#0" />
-            <element signature="e#1164#2372#0" />
-            <element signature="e#1539#2372#0" />
-            <marker date="1558452758435" expanded="false" signature="538:543" ph="..." />
-            <marker date="1558452758435" expanded="false" signature="1159:1164" ph="..." />
+            <marker date="1558277075123" expanded="true" signature="59:64" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArticalSpider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="e#193#246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Envs/ArticalSpider/Lib/site-packages/w3lib/html.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-182">
+          <caret line="143" column="33" selection-start-line="143" selection-start-column="33" selection-end-line="143" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ArticalSpider/spiders/jobbole.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="173">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArticalSpider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="111" column="54" lean-forward="true" selection-start-line="111" selection-start-column="54" selection-end-line="111" selection-end-column="54" />
+          <folding>
+            <element signature="n#!!doc" />
+            <element signature="e#152#167#0" expanded="true" />
+            <element signature="e#418#499#0" />
+            <element signature="e#418#462#0" />
+            <element signature="e#543#1118#0" />
+            <element signature="e#639#1098#0" />
+            <element signature="e#660#958#0" />
+            <element signature="e#1230#1369#0" />
+            <element signature="e#1423#1606#0" />
+            <element signature="e#1651#1717#0" />
+            <element signature="e#1199#1237#0" />
+            <marker date="1558716404699" expanded="false" signature="666:671" ph="..." />
+            <marker date="1558716404699" expanded="true" signature="1760:1763" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

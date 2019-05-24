@@ -4,8 +4,12 @@
 #
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/items.html
+import datetime
+import re
 
 import scrapy
+from scrapy.loader import ItemLoader
+from scrapy.loader.processors import TakeFirst, MapCompose, Join
 from w3lib.html import remove_tags
 
 from ArticalSpider.models.es_model import ArticleType
@@ -38,27 +42,73 @@ def gen_suggests(index, info_tuple):
     return suggests
 
 
+def get_nums(value):
+    match_re = re.match(".*?(\d+).*", value)
+    if match_re:
+        nums = int(match_re.group(1))
+    else:
+        nums = 0
+
+    return nums
+
+
+def date_convert(value):
+    try:
+        create_date = datetime.datetime.strptime(value, "%Y/%m/%d").date()
+    except:
+        create_date = datetime.datetime.now().date()
+
+    return create_date
+
+
+def tags_remove_comment(value):
+    if "评论" in value:
+        return ""
+    else:
+        return value
+
+
+def do_nothing(value):
+    return value
+
+
+class JobboleItemLoader(ItemLoader):
+    default_output_processor = TakeFirst()
+
+
 class JobboleArticlrItem(scrapy.Item):
     title = scrapy.Field()
-    create_time = scrapy.Field()
+    create_time = scrapy.Field(
+        input_processor=MapCompose(date_convert)
+    )
     url = scrapy.Field()
     url_object_id = scrapy.Field()
-    front_image_url = scrapy.Field()
-    front_image_path = scrapy.Field()
-    praise_nums = scrapy.Field()
-    fav_nums = scrapy.Field()
-    comment_nums = scrapy.Field()
+    image_url = scrapy.Field(
+        output_processor=MapCompose(do_nothing)
+    )
+    # image_path = scrapy.Field()
+    praise_nums = scrapy.Field(
+        input_processor=MapCompose(get_nums)
+    )
+    fav_nums = scrapy.Field(
+        input_processor=MapCompose(get_nums)
+    )
+    comment_nums = scrapy.Field(
+        input_processor=MapCompose(get_nums)
+    )
     content = scrapy.Field()
-    tags = scrapy.Field()
+    tags = scrapy.Field(
+        output_processor=Join(",")
+    )
 
     def save_es(self):
         article_type = ArticleType()
         article_type.title = self['title']
         article_type.create_time = self['create_time']
-        # article_type.url = self.['url']
+        article_type.url = self['url']
         article_type.url_object_id = self['url_object_id']
-        article_type.front_image_url = self['front_image_url']
-        # article_type.front_image_path = self['front_image_path']
+        article_type.front_image_url = self['image_url']
+        # article_type.front_image_path = self['image_path']
         article_type.praise_nums = self['praise_nums']
         article_type.fav_nums = self['fav_nums']
         article_type.comment_nums = self['comment_nums']
