@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
-import time
+
+from urllib import parse
 
 import scrapy
 from scrapy.http import Request
-from urllib import parse
-from scrapy.loader import ItemLoader
 
 from ArticalSpider.items import JobboleArticlrItem, JobboleItemLoader
 from ArticalSpider.utils.commend import get_md5
